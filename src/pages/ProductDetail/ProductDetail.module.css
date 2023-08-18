@@ -1,0 +1,43 @@
+.containerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.image{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.price {
+    margin: 20px 0;
+}
+
+.category {
+    color: orange;
+    padding: 10px;
+    border: solid 1px;
+    background-color: #ededed;
+}
+
+.info {
+    margin-top: 1rem;
+}
+
+.cartButton {
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .containerGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

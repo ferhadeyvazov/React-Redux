@@ -1,0 +1,26 @@
+img{
+    width: 100%;
+    height: auto;
+}
+
+.section{
+    padding: 5rem 0;
+}
+.container{
+    margin-inline: auto;
+    width: 90%;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: rgb(76 31 136);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.main{
+    padding: 7rem 0;
+}

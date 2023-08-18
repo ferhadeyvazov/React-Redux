@@ -1,0 +1,48 @@
+.product__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    /* margin: 10px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.card__content {
+    position: absolute;
+    width: 100%;
+    padding: .5rem 1rem;
+    bottom: -100%;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    transition: all .4s ease-out;
+}
+
+.card__image {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.card:hover .card__content {
+    bottom: 0;
+}
+
+.title {
+    color: orangered;
+}
+
+.addCartBtn {
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
